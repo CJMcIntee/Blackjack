@@ -1,9 +1,8 @@
 /*Programmer: Christine McIntee
   July 11th 2023
-  Blackjack game rules*/
-  
-/*Bugs: The winOrLose message often displays twice.
-  The game assumes the player will want to hit if their cards value below 18.*/
+  Blackjack game rules, assumes the player 
+  will want to hit if their cards value below 18. 
+  Bugs: The winOrLose message sometimes displays twice.*/
   
 import java.util.*;
 
@@ -64,7 +63,7 @@ public class Blackjack {
             dealerValue = dealerAction(winOrLoseB, dealerValue, dealersHand, cardOneD, cardTwoD);
             winOrLoseB = winOrLose(playerValue, dealerValue);
          }
-      } //end while loop
+      } //end loop
    } //end playBlackjack method
    
    //Dealer's actions
